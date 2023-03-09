@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diabetes prediction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+  html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+  }
+</style>
+<body>
+
+  
+  <h2 style="color: #fff;">Result </h2>
+{% if prediction == 1%}
+<h2 style="color: rgb(189, 16, 16);">Chances of having Diabetes is more.</h2>
+
+{% elif prediction == 0%}
+<h2 style="color: rgb(25, 197, 25);">No Worries!!! You don't have Diabetes.</h2>
+
+{% endif %}
+
+
+ 
+ 
+  
+  </body>
+  </html>
